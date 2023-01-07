@@ -8,17 +8,29 @@
 }
 
 * {
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html {
+    
+}
+
 body {
+   
+    
     background-color: var(--cor-de-funndo);
     color: var(--brancno-principal);
     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
+  
+}
+
+.container__main {
+    background-color: #167BF7;
 }
 
 .container {
@@ -26,6 +38,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
+   
 
 }
 
@@ -36,11 +49,13 @@ body {
     align-items: center;
     text-align: center;
     background-attachment: fixed;
+    
 
 }
 
 .container__caixa {
     margin: 0 6em;
+    
 }
 
 .container__titulo {
@@ -88,7 +103,7 @@ body {
 }
 .secundario {
     align-items: center;
-    margin: 0 10em;
+    max-width: 100vw;
 }
 
 .descricao__titulo {
@@ -119,14 +134,16 @@ body {
 
 .dispositivos {
     text-align: center;
-}li {
-    
+}.dispositivos__lista li {
+
+    margin: 5px;
+    display: inline-block;
 }
 .dispositivo__titulo {
     font-size: 48px;
 }
 .lista__item {
-    32px
+    
 }
 
 /*============ Footer ====================*/
@@ -158,4 +175,73 @@ body {
     margin: 1em 0;
     font-size: 14px;
     color: var(--cinza-secunddario);
+}
+
+
+/*=======================MEDIA QUERIES =========================*/
+
+@media (max-width: 1175px)  {
+    .dispositivos__lista li{ 
+        width: 100%;    
+        display: block;    
+    }
+}
+
+@media (max-width: 708px ) {
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .dispositivos__lista  {
+   
+        display: block;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .lista__footer {
+        display: block;
+    }
+
+    .dispositivo__titulo {
+        text-align: center;
+        margin: 0 1.5em;
+        font-size: 2.5em;
+    }
+
+    .rodape__texto {
+        text-align: justify;
+        position: relative;
+        left: 1px;
+        
+    }
+    .lista__link {
+        text-align: justify;
+        
+    }
+    .lista__link a{
+    padding: 0; margin: 0;
+    position: relative;
+    left: 1px;
+    }
+
+   
+
+
 }
