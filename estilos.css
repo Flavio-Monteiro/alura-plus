@@ -180,12 +180,6 @@ body {
 
 /*=======================MEDIA QUERIES =========================*/
 
-@media (max-width: 1175px)  {
-    .dispositivos__lista li{ 
-        width: 100%;    
-        display: block;    
-    }
-}
 
 @media (max-width: 708px ) {
     .container{
