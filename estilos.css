@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-html {
-    
-}
-
 body {
    
     
@@ -99,7 +95,8 @@ body {
 }
 /*==============================================================*/
 .secundario__imagem {
-    width: 80%;
+    width: 70%;
+    margin-left: 20px;
 }
 .secundario {
     align-items: center;
@@ -181,7 +178,7 @@ body {
 /*=======================MEDIA QUERIES =========================*/
 
 
-@media (max-width: 708px ) {
+@media screen and (max-width: 708px ) {
     .container{
         display: block;
         background-image: none;
